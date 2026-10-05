@@ -6,18 +6,70 @@
     <title>Document</title>
     <style>
         div-1{
+            display: inline-block;
             width: 200px;
+            height: 100px;
             background-color: aqua;
             border-radius: 10px;
             margin: 10px;
-            border: 2px;
+            border: 2px solid black;;
             border-color: black;
 
         }
     </style>
 </head>
 <body>
-    <h>understanding </h>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem dolores amet ratione esse nam possimus omnis repellat totam harum cumque quisquam ipsam ab, tempore error ipsum laudantium autem asperiores? Numquam.</p>
+    <h>Important to learn inline-block</h>
+    <p> 1. Understand `display`
+
+The most important property is
+display: inline-block;
+It tells the browser that an element should behave partly like an **inline** element and partly like a **block** element.
+2. Know the difference
+You should understand these three:
+display: block;
+display: inline;
+display: inline-block;
+ 3. Learn `width` and `height`
+With `inline-block`, you can control the size:
+css
+.box {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+}
+4. Learn `margin` and `padding`
+These are very important when creating boxes:
+css
+.box {
+    margin: 10px;
+    padding: 20px;
+}
+*Margin = space outside the box.
+*Padding = space inside the box.
+5. Learn border
+For example:
+css
+border: 2px solid black;
+This creates a 2-pixel black border around the element.
+6. Learn how multiple boxes work
+This is the main reason to practice `inline-block`:
+html
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+css
+.box {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+}
+The boxes can appear next to each other:
+7. Practice with `h2` and `p`
+Since you're working on this now, practice like this:
+This will help you understand how **HTML content + CSS layout** work together.
+The most important idea to remember:
+inline-block` lets elements stay side by side while you can still control their width, height, margin, padding, and border
+</p>
 </body>
 </html>
